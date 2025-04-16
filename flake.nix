@@ -1,13 +1,17 @@
 {
-  description = "Pepper's flake templates";
+  description = "Flake templates";
 
   outputs =
-    { self, ... }:
+    { ... }:
     {
       templates = {
         python = {
           path = ./python;
           description = "A simple python template";
+        };
+        rust = {
+          path = ./rust;
+          description = "A simple rust template";
         };
       };
     };
