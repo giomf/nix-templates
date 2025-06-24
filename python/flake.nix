@@ -18,6 +18,7 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [
+          pp.mypy
           pp.python
           pp.python-lsp-server
           pp.ruff
