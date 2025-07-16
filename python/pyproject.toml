@@ -40,6 +40,3 @@ quote-style = "double"
 
 # Indent with spaces, rather than tabs
 indent-style = "space"
-
-[tool.mypy]
-mypy_path = "."

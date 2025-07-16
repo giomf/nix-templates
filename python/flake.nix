@@ -18,9 +18,9 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [
-          pp.mypy
-          pp.python
           pkgs.ruff
+          pkgs.ty
+          pp.python
         ];
       };
     };
