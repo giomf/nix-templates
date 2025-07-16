@@ -20,10 +20,7 @@
         buildInputs = [
           pp.mypy
           pp.python
-          pp.python-lsp-server
-          pp.ruff
-          pp.virtualenv
-          pp.yapf
+          pkgs.ruff
         ];
       };
     };
