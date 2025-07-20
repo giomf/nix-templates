@@ -20,6 +20,7 @@
         buildInputs = [
           pkgs.ruff
           pkgs.ty
+          pkgs.uv
           pp.python
         ];
       };
