@@ -22,6 +22,8 @@
           pkgs.ty
           pkgs.uv
           pp.python
+          # Only used for goto definiton/...
+          pp.python-lsp-server
         ];
       };
     };
