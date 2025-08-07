@@ -24,6 +24,7 @@
         buildInputs = [
           toolchain
           pkgs.cargo-sort
+          pkgs.cargo-edit
         ];
       };
     };
