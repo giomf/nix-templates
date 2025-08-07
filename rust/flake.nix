@@ -23,6 +23,7 @@
       devShells.${system}.default = pkgs.mkShell {
         buildInputs = [
           toolchain
+          pkgs.cargo-sort
         ];
       };
     };
