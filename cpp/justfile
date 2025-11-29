@@ -1,0 +1,34 @@
+# CMake build directory
+BUILD_DIR := "build"
+
+# Default recipe
+default: build
+
+# Configure CMake project
+configure:
+    cmake -B {{BUILD_DIR}} -DCMAKE_BUILD_TYPE=Debug
+    ln -sf {{BUILD_DIR}}/compile_commands.json .
+
+# Build the project
+build: configure
+    cmake --build {{BUILD_DIR}}
+
+# Build and run
+run: build
+    ./{{BUILD_DIR}}/main
+
+# Clean build artifacts
+clean:
+    rm -rf {{BUILD_DIR}} compile_commands.json
+
+# Reconfigure (clean + configure)
+reconfigure: clean configure
+
+# Show help
+help:
+    @echo "Available recipes:"
+    @echo "  configure    - Configure CMake project"
+    @echo "  build        - Build the project"
+    @echo "  run          - Build and run"
+    @echo "  clean        - Remove build artifacts"
+    @echo "  reconfigure  - Clean and reconfigure"

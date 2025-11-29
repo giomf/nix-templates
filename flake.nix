@@ -13,6 +13,14 @@
           path = ./rust;
           description = "A simple rust template";
         };
+        cpp = {
+          path = ./cpp;
+          description = "A simple cpp template";
+        };
+        zola = {
+          path = ./zola;
+          description = "A simple zola template";
+        };
       };
     };
 }
