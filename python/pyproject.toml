@@ -7,6 +7,9 @@ requires-python = ">=3.13"
 
 dependencies = []
 
+[project.scripts]
+main = "main:main"
+
 [tool.ruff]
 # Set the maximum line length to 120
 line-length = 120
