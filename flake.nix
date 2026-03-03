@@ -5,6 +5,10 @@
     { ... }:
     {
       templates = {
+        default = {
+          path = ./default;
+          description = "Default template";
+        };
         python = {
           path = ./python;
           description = "A simple python template";

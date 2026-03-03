@@ -1,5 +1,5 @@
 {
-  description = "A simple python flake base on pyproject";
+  description = "A simple python flake based on pyproject";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     pyproject-nix.url = "github:pyproject-nix/pyproject.nix";
