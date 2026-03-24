@@ -38,7 +38,9 @@
           pkgs.ty
           pkgs.uv
           pp.python
+          pp.venvShellHook
         ];
+        venvDir = ".venv";
       };
       packages.${system}.default =
         let
