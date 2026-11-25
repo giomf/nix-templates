@@ -25,6 +25,10 @@
           path = ./zola;
           description = "A simple zola template";
         };
+        zephyr = {
+          path = ./zephyr;
+          description = "A zephyr west workspace template";
+        };
       };
     };
 }
